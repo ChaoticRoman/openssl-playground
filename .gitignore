@@ -2,3 +2,4 @@ private.pem
 public.pem
 document.*
 signature.*
+signature-out.*
