@@ -48,7 +48,8 @@ openssl dgst -sha256 -verify public.pem -signature signature-out.sha256 document
 ## Encrypting and decrypting the document using asymmetric encryption
 
 ```
-
+openssl pkeyutl -encrypt -inkey public.pem -pubin -in document.txt -out document.txt.enc
+openssl pkeyutl -decrypt -inkey private.pem -in document.txt.enc -out document.txt.dec
 ```
 
 ## References
