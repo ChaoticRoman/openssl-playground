@@ -52,6 +52,10 @@ openssl pkeyutl -encrypt -inkey public.pem -pubin -in document.txt -out document
 openssl pkeyutl -decrypt -inkey private.pem -in document.txt.enc -out document.txt.dec
 ```
 
+## Custom CA to sign your certificates
+
+https://gist.github.com/fntlnz/cf14feb5a46b2eda428e000157447309
+
 ## References
 
 * https://opensource.com/article/21/4/encryption-decryption-openssl
